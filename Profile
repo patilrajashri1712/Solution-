@@ -1,0 +1,10 @@
+<body>
+    <fieldset width="5pxl" hight="3px" >
+        <legend>Acadmic information</legend>
+        <p> Name : Rajashri</p>
+        <p> A/p :&nbsp; Sangli</p>
+        <p> MObileno:&nbsp;775648130</p>
+        <p>College name:IACSD&nbsp;</p>
+      </fieldset>
+      
+</body>
