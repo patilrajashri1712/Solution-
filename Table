@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p style="color: rgb(245, 238, 220);">
+        Hello! This is Rajashri
+<span style="color: aqua;" ></span>
+    </p>
+
+    <div>
+        <hr width=" 60% " color="red " align="left " size="3 ">
+
+
+        <!-- <table bgcolor="pink " border="2 " height="300px " width="800px " cellspacing="3px " cellpadding="3px "> -->
+
+    <table bgcolor="pink" border="2" height="300px" width="800px"  cellspacing="3x" cellpadding="3x"> 
+    <tr>
+      <th colspan="4">Productid</th>
+    </tr>
+    <tr>
+        <th>product id</th>
+        <th>produt name</th>
+        <th>product qty</th>
+        <th>product price</th>
+
+    </tr>
+
+    <tr>
+        <td rowspanspan="2">1</td>
+        <td> chair</td>
+        <td>12</td>
+        <td>2000</td>
+    </tr>
+
+    <tr>
+        <td>table</td>
+        <td>15</td>
+        <td>4000</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>shelf</td>
+        <td>34</td>
+        <td>2500</td>
+    </tr>
+
+
+
+</table>
+
+
+
+
+</div>
+</body>
+</html>
