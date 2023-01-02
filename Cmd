@@ -1,0 +1,52 @@
+
+npm init
+npm install node
+npm install express
+
+
+
+
+
+
+git ststus
+git add .
+git status
+git commit -m "msg"
+git push
+
+
+
+
+sudo yum update
+
+sudo yum install git
+git clone(url of repository)
+
+sudo yum install docker
+
+
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+
+ls
+cd (filename)
+
+sudo docker images
+
+sudo docker pull hello-world
+sudo doker pull nginx
+
+sudo docker build -t (imagename) .
+sudo docker images
+
+sudo docker ps
+
+sudo docker run -d -p 8000:8000 (filename)
+
+
+sudo docker kill (id)
+
+sudo docker rmi -f (id)
+
+
