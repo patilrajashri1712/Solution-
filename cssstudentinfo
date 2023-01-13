@@ -1,0 +1,129 @@
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Info</title>
+</head>
+<body>
+    <form id = "new"class="for_form">
+        <div class="form_body">
+        <header>Student Registration</header>
+        <div class="msg"></div>
+        <div>
+            <label class="for_label" for="nm">Name</label>
+            <input class="for_input" type="text" id="nm"  >
+        </div>
+        <div>
+            <label class="for_label" for="add">Address</label>
+            <input class="for_input" type="text" id="add">
+        </div>
+        <div>
+            <label class="for_label" for="hob">Hobbies</label>
+            <input class="for_input" type="text" id="hob">
+        </div>
+        <button class="btn1" type="button"  onclick="AddObject()">Add Object</button>
+        <button class="btn2" type="button" onclick="DisplayObject()">Display object</button>
+    </div>
+    </form>
+    <!-- <ul id="list"><h1>List</h1></ul> -->
+    <div id="output"></div>
+</body>
+<script src="main.js"></script>
+</html>
+
+
+
+//Style.css
+.for_form{
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.for_formREd{
+    background: linear-gradient(to right, #502c2c, #ed142d);
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.form_body > *{
+    padding: 5px;
+}
+
+
+//main
+const myform=document.querySelector('.for_form');
+const  Name=document.querySelector('#nm');
+const Address=document.querySelector('#add');
+const Hobbies=document.querySelector('#hob');
+const List=document.querySelector('#list');
+const Msg=document.querySelector('.msg');
+
+//myform.addEventListener('submit',onsubmit);
+var count =1;
+var str ="<ol>"  ;
+
+AddObject=()=>{
+    //console.log(Name.value.length);
+    if(Name.value.length>=6){
+        alert("It should be less than SIX charachters!!!!!!!!!");
+    }
+    else{
+        
+       // console.log(Name.value);
+        str+= `<li> ${Name.value}  ${Address.value}  ${Hobbies.value}</li>`  
+        Name.value='';
+        Address.value='';
+        Hobbies.value='';
+}
+}
+DisplayObject=()=>{
+   
+    if(count==0){
+    document.getElementById("new").classList.remove("for_formREd");
+
+    document.getElementById("new").classList.add("for_form");
+    count=1;
+   }else{
+    document.getElementById("new").classList.remove("for_form");
+
+    document.getElementById("new").classList.add("for_formREd");
+    count= 0;
+
+    display();
+        
+   }
+}
+display=()=>{
+   // console.log(str);
+    str+="</ol>"
+    document.getElementById("output").innerHTML+=str;
+   
+}
+
+// // function onsubmit(e)
+// // {
+// //     // console.log(Name.length)
+// e.preventDefault();
+
+        
+// const li=document.createElement('li');
+// li.appendChild(document.createTextNode(`${Name.value} , ${Address.value} , ${Hobbies.value}`));
+// List.appendChild(li);
+ 
+// }
+    
+    
+
+// }
+
+
+
